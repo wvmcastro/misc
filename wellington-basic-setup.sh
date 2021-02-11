@@ -11,15 +11,6 @@ mkdir -p ~/.vim/pack/themes/start
 cd ~/.vim/pack/themes/start
 git clone https://github.com/dracula/vim.git dracula
 
-# zsh and Oh My Zsh and my favorite plugins
-sudo apt install zsh -y
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-wget https://raw.githubusercontent.com/wvmcastro/misc/main/.zshrc
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
-sudo apt install python3-dev python3-pip python3-setuptools
-sudo pip3 install thefuck
-
 # Brave web browser
 sudo apt install apt-transport-https curl gnupg -y
 curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
@@ -32,10 +23,6 @@ snap install bitwarden
 
 # tldr cli helper
 sudo apt install tldr -y
-
-# zsh and oh my zsh
-sudo apt install zsh -y
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Spotify
 snap install spotify
@@ -53,3 +40,13 @@ cp -r flat-remix-gtk/Flat-Remix* ~/.themes/
 rm -rf flat-remix
 rm -rf flat-remix-gnome
 sudo apt install gnome-tweak-tool -y
+
+# zsh and Oh My Zsh and my favorite plugins
+sudo apt install zsh -y
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+wget https://raw.githubusercontent.com/wvmcastro/misc/main/.zshrc
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+sudo apt install python3-dev python3-pip python3-setuptools
+sudo pip3 install thefuck
+
