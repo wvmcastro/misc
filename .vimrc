@@ -12,7 +12,10 @@
 set nocompatible
 
 " Turn on syntax highlighting.
-syntax on
+packadd! dracula
+syntax enable
+colorscheme dracula
+
 
 " Disable the default Vim startup message.
 set shortmess+=I
