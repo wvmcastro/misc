@@ -79,3 +79,7 @@ inoremap <Up>    <ESC>:echoe "Use k"<CR>
 inoremap <Down>  <ESC>:echoe "Use j"<CR>
 
 set hls
+
+set tabstop=2
+set shiftwidth=2
+set expandtab
