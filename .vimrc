@@ -87,3 +87,8 @@ set autoindent
 set smartindent
 
 set cursorline " highlight current line "
+
+set showmatch " when closing (["{ shows the opening correspondent "
+
+" enable all Python syntax highlighting features
+let python_highlight_all = 1

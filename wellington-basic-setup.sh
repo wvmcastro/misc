@@ -10,6 +10,21 @@ wget https://raw.githubusercontent.com/wvmcastro/misc/main/.vimrc
 mkdir -p ~/.vim/pack/themes/start
 cd ~/.vim/pack/themes/start
 git clone https://github.com/dracula/vim.git dracula
+git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-plugins/start/ale
+
+# # Asynchronous Lint Engine vim
+git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-plugins/start/ale
+
+# # You Complete Me vim
+sudo apt install build-essential cmake vim-nox python3-dev -y
+sudo apt install mono-complete golang nodejs default-jdk npm -y
+mkdir -p ~/.vim/bundle/
+cd  ~/.vim/bundle/
+git clone https://github.com/ycm-core/YouCompleteMe.git --depth 1
+cd YouCompleteMe
+git submodule update --init --recursive
+python3 install.py --all
+cd ~
 
 # Powerline fonts
 git clone https://github.com/powerline/fonts.git --depth=1
