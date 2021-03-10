@@ -26,6 +26,13 @@ git submodule update --init --recursive
 python3 install.py --all
 cd ~
 
+# # Auto close html and xml
+mkdir -p ~/.vim/plugin
+wget https://raw.githubusercontent.com/alvan/vim-closetag/master/plugin/closetag.vim -O \
+     ~/.vim/plugin/closetag.vim
+echo "let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.urdf*'" >> \
+      ~/.vimrc
+
 # Powerline fonts
 git clone https://github.com/powerline/fonts.git --depth=1
 cd fonts
@@ -70,6 +77,9 @@ sudo apt update && sudo apt install signal-desktop -y
 
 # discord
 snap install discord
+
+# okular pdf reader
+sudo apt install okular -y
 
 # zsh and Oh My Zsh and my favorite plugins
 sudo apt install zsh -y
