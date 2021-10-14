@@ -14,8 +14,13 @@ set nocompatible
 " Turn on syntax highlighting.
 packadd! dracula
 syntax enable
+let g:dracula_italic = 0
 colorscheme dracula
 
+
+let g:lightline = {
+      \ 'colorscheme': 'dracula',
+      \ }
 
 " Disable the default Vim startup message.
 set shortmess+=I
@@ -92,3 +97,6 @@ set showmatch " when closing (["{ shows the opening correspondent "
 
 " enable all Python syntax highlighting features
 let python_highlight_all = 1
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.urdf*, *.launch'
+
+set colorcolumn=80

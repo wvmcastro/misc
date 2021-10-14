@@ -11,6 +11,7 @@ mkdir -p ~/.vim/pack/themes/start
 cd ~/.vim/pack/themes/start
 git clone https://github.com/dracula/vim.git dracula
 git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-plugins/start/ale
+git clone https://github.com/itchyny/lightline.vim ~/.vim/pack/plugins/start/lightline
 
 # # Asynchronous Lint Engine vim
 git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-plugins/start/ale
